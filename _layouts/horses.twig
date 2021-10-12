@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<ul class="horse-listings">
+  {% for horse in page.available_horses %}
+    <li class="listing">
+      <p class="callout text--accent">{{ horse.name }} {% if horse.price %} &middot; {{ horse.price }} {% endif %}</p>
+      <p class="subtitle">
+        {% if horse.nickname %}
+          A.K.A <span class="text--accent">{{ horse.nickname }}</span>{% if horse.description %},{% endif %}
+        {% endif %}
+        {% if horse.description %}
+          <span class="uppercase">{{ horse.description }}</span>{% if horse.birthday %};{% endif %}
+        {% endif %}
+        {% if horse.birthday %}
+          b. {{ horse.birthday }}
+        {% endif %}
+      </p>
+      {% if horse.sires.size > 0 %}
+        <p>
+          <span class="small-caps">Sire:</span>
+          <span class="quote">{{ horse.sires|join: ', ' }}</span>
+        </p>
+      {% endif %}
+      {% if horse.dames.size > 0 %}
+        <p>
+          <span class="small-caps">Dame:</span>
+          <span class="quote">{{ horse.dames|join: ', ' }}</span>
+        </p>
+      {% endif %}
+      {% if horse.bio %}
+        <p>
+          <span class="small-caps">Bio:</span>
+          <span class="quote">{{ horse.bio }}</span>
+        </p>
+      {% endif %}
+      <a href="mailto:{{ site.email }}" class="subtitle">Contact about {{ horse.nickname }}</a>
+    </li>
+  {% endfor %}
+</ul>

@@ -2,4 +2,45 @@
 layout: default
 ---
 
-{{ content }}
+<img src="{{ site.baseurl }}/assets/icons_horseshoe.png">
+<h1 class="title text--main">{{ page.intro }}</h1>
+
+<div class="body">
+  {{ content }}
+  {% if page.hero_image_name %}
+    <img src="{{ site.baseurl }}/assets/{{ page.hero_image_name }}">
+  {% endif %}
+</div>
+
+<img src="{{ site.baseurl }}/assets/icons_succulent.png">
+<h2 class="title text--main">{{ page.subtitle }}</h2>
+
+<ul class="folks">
+  {% for person in page.people %}
+    <li class="person">
+      {% if person.image_name %}
+        <img src="{{ site.baseurl }}/assets/{{ person.image_name }}">
+      {% endif %}
+      <p class="callout text--accent">{{ person.name }}</p>
+      {% if person.role %}
+        <p class="body">{{ person.role }}</p>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
+
+<img src="{{ site.baseurl }}/assets/icons_cacti.png">
+<h2 class="title text--main">{{ page.affiliates_title }}</h2>
+
+<ul class="affiliates">
+  {% for affiliate in page.affiliates %}
+    <li class="affiliate">
+      <p class="subtitle">{{ affiliate.name }}</p>
+      {% if affiliate.site %}
+        <p class="body">
+          <a href="{{ affiliate.url }}" target="_blank">{{ affiliate.site }}</a>
+        </p>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>

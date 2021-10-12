@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+<h1 class="title text--main">{{ site.title }}</h1>
+
+{{ content }}
+
+{% if page.hero_image_name %}
+  <img src="{{ site.baseurl }}/assets/{{ page.hero_image_name }}">
+{% endif %}
