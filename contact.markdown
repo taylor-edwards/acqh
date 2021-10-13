@@ -2,6 +2,11 @@
 layout: contact
 title: Contact
 hero_image_name: hero_red.png
+keywords:
+  - hours
+  - contact
+  - phone
+  - email
 ---
 
 Hours:

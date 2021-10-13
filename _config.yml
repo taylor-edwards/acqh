@@ -2,10 +2,48 @@ title: Arizona Cactus Quarter Horses
 abbreviation: ACQH
 email: arizonacactusqrtrhorses@gmail.com
 description: >-
-  Horses raised in Eastern Washington for sale
-keywords: horse, horses, spokane, seattle, eastern, washington, pnw, pacific, northwest, idaho, montana, wyoming, utah, oregon, home, business, buy, sell, sale, blue, roan, delivery, stable, bred, boarding
-baseurl: "" # the subpath of your site, e.g. /blog
+  Family-owned horse breeder located in Eastern Washington
+keywords:
+  - horse
+  - horses
+  - quarter
+  - home
+  - business
+  - buy
+  - sell
+  - for sale
+  - blue roan
+  - red roan
+  - chestnut
+  - delivery
+  - stable
+  - bred
+  - breed
+  - breeder
+  - breeding
+  - payment
+  - mares
+  - fillies
+  - colts
+  - studs
+  - pnw
+  - pacific
+  - northwest
+  - national
+  - spokane
+  - seattle
+  - eastern
+  - washington
+  - idaho
+  - montana
+  - wyoming
+  - utah
+  - oregon
+baseurl: "" # the subpath of your site e.g. /blog
 url: "https://arizonacactusquarterhorses.com"
+established_year: 2014 # used for the copyright date range
+facebook_url: https://www.facebook.com/0102ACQH
+instagram_url: https://www.instagram.com/arizonacactusquarter/
 
 # Build settings
 plugins:

@@ -1,6 +1,9 @@
 ---
 layout: horses
 title: Available Horses
+keywords:
+  - availability
+  - stock
 available_horses:
   - name: AC GIDGET SMOKNMIROR
     nickname: Kinicki

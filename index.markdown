@@ -1,7 +1,7 @@
 ---
 layout: home
 hero_image_name: hero_green.png
-intro: Welcome to Arizona Cactus
+intro: Welcome to<br />Arizona Cactus
 subtitle: Meet the Gang
 people:
   - name: Clark L. Sessions
@@ -31,29 +31,29 @@ people:
 affiliates_title: Friends of ACQH
 affiliates:
   - name: WMW Quarter Horses
-    site: www.wmwquarterhorses.com
-    url : https://www.wmwquarterhorses.com
+    byline: www.wmwquarterhorses.com
+    byline_url: https://www.wmwquarterhorses.com
   - name: Janalyn's Performance Horses
-    site: janalynsperformancehorses.com
-    url : https://janalynsperformancehorses.com
+    byline: janalynsperformancehorses.com
+    byline_url: https://janalynsperformancehorses.com
   - name: Diamond B Quarter Horses
-    site: diamondbquarterhorses.com
-    url : https://diamondbquarterhorses.com
+    byline: diamondbquarterhorses.com
+    byline_url: https://diamondbquarterhorses.com
   - name: Aaron Ranch
-    site: aaronranch.com
-    url : https://aaronranch.com
+    byline: aaronranch.com
+    byline_url: https://aaronranch.com
   - name: Reynolds Performance Horses
-    site:
-    url :
-  - name: Lady Longears Ranch and Arena
-    site:
-    url :
+    byline: Visit on Facebook
+    byline_url: https://business.facebook.com/Reynolds-Performance-Horses-533572230471640/
+  - name: Lady Longears Ranch and&nbsp;Arena
+    byline: Visit on Facebook
+    byline_url: https://www.facebook.com/LadyLongearsRanch/
   - name: 7Fold Quarter Horses
-    site:
-    url :
+    byline: Visit on Facebook
+    byline_url: https://www.facebook.com/ashleymassengillbartelds/
   - name: Wildrose Performance Horses
-    site:
-    url :
+    byline: Dallas Tornow &ndash; Deer&nbsp;Park,&nbsp;WA
+    byline_url:
 ---
 
 Arizona Cactus Quarter Horses was formed in 2014 by Clark Sessions just outside

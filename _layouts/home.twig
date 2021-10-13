@@ -2,45 +2,71 @@
 layout: default
 ---
 
-<img src="{{ site.baseurl }}/assets/icons_horseshoe.png">
-<h1 class="title text--main">{{ page.intro }}</h1>
+<section class="section section--hero">
+  <div>
+    <div class="heading">
+      <img src="{{ site.baseurl }}/assets/icons_horseshoe.png" class="heading--icon">
+      <h1 class="title text--main">{{ page.intro }}</h1>
+    </div>
+    <div class="section--content body">{{ content }}</div>
+  </div>
 
-<div class="body">
-  {{ content }}
   {% if page.hero_image_name %}
-    <img src="{{ site.baseurl }}/assets/{{ page.hero_image_name }}">
+    <img class="hero-image" src="{{ site.baseurl }}/assets/{{ page.hero_image_name }}">
   {% endif %}
-</div>
+</section>
 
-<img src="{{ site.baseurl }}/assets/icons_succulent.png">
-<h2 class="title text--main">{{ page.subtitle }}</h2>
+<section class="section">
+  <div class="heading">
+    <img src="{{ site.baseurl }}/assets/icons_succulent.png" class="heading--icon">
+    <h2 class="title text--main">{{ page.subtitle }}</h2>
+  </div>
 
-<ul class="folks">
-  {% for person in page.people %}
-    <li class="person">
-      {% if person.image_name %}
-        <img src="{{ site.baseurl }}/assets/{{ person.image_name }}">
-      {% endif %}
-      <p class="callout text--accent">{{ person.name }}</p>
-      {% if person.role %}
-        <p class="body">{{ person.role }}</p>
-      {% endif %}
-    </li>
-  {% endfor %}
-</ul>
+  <ul class="folks">
+    {% for person in page.people %}
+      <li class="person">
+        {% if person.image_name %}
+          <img src="{{ site.baseurl }}/assets/{{ person.image_name }}" class="portrait">
+        {% endif %}
+        <p class="callout text--accent">{{ person.name }}</p>
+        {% if person.role %}
+          <p class="body">{{ person.role }}</p>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</section>
 
-<img src="{{ site.baseurl }}/assets/icons_cacti.png">
-<h2 class="title text--main">{{ page.affiliates_title }}</h2>
+<section class="section">
+  <div class="heading">
+    <img src="{{ site.baseurl }}/assets/icons_cacti.png" class="heading--icon">
+    <h2 class="title text--main">{{ page.affiliates_title }}</h2>
+  </div>
 
-<ul class="affiliates">
-  {% for affiliate in page.affiliates %}
-    <li class="affiliate">
-      <p class="subtitle">{{ affiliate.name }}</p>
-      {% if affiliate.site %}
-        <p class="body">
-          <a href="{{ affiliate.url }}" target="_blank">{{ affiliate.site }}</a>
-        </p>
-      {% endif %}
-    </li>
-  {% endfor %}
-</ul>
+  <ul class="affiliates">
+    {% for affiliate in page.affiliates %}
+      <li class="affiliate">
+        <div class="logo">
+          <div class="logo--ornament"></div>
+          <svg width="100px" height="100px" viewBox="0 0 300 300" class="logo">
+            <use xlink:href="#logo"></use>
+          </svg>
+        </div>
+        <div>
+          <p class="subtitle uppercase">{{ affiliate.name }}</p>
+          {% if affiliate.byline %}
+            <p class="body">
+              {% if affiliate.byline_url %}
+                <a href="{{ affiliate.byline_url }}" target="_blank" class="affiliate--link">
+                  {{ affiliate.byline }}
+                </a>
+              {% else %}
+                {{ affiliate.byline }}
+              {% endif %}
+            </p>
+          {% endif %}
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
