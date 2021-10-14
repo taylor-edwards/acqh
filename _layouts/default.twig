@@ -60,6 +60,11 @@
     </symbol>
   </svg>
 
+  <div class="confetti--wrapper">
+    <div class="confetti confetti--tl"></div>
+    <div class="confetti confetti--tr"></div>
+  </div>
+
   <nav class="nav">
     <a class="logo-mark" href="{{ site.baseurl }}/">
       <svg viewBox="0 0 300 300" width="100" height="100">
@@ -69,24 +74,24 @@
     </a>
     <ul class="nav--links uppercase">
       <li>
-        <a href="{{ site.baseurl }}/" class="nav--home {% if page.url == "/" %}bold{% endif %}">Home</a>
+        <a href="{{ site.baseurl }}/" class="nav--link nav--home {% if page.url == "/" %}selected{% endif %}">Home</a>
       </li>
       <li>
-        <a href="{{ site.baseurl }}/horses" class="{% if page.url == "/horses.html" %}bold{% endif %}">Horses</a>
+        <a href="{{ site.baseurl }}/horses" class="nav--link {% if page.url == "/horses.html" %}selected{% endif %}">Horses</a>
       </li>
       <li>
-        <a href="{{ site.baseurl }}/contact" class="{% if page.url == "/contact.html" %}bold{% endif %}">Contact</a>
+        <a href="{{ site.baseurl }}/contact" class="nav--link {% if page.url == "/contact.html" %}selected{% endif %}">Contact</a>
       </li>
       <li class="social">
         {% if site.instagram_url %}
-          <a href="{{ site.instagram_url }}">
+          <a href="{{ site.instagram_url }}" target="_blank">
             <svg viewBox="0 0 512 512" width="24" height="24" class="icon">
               <use xlink:href="#instagram"></use>
             </svg>
           </a>
         {% endif %}
         {% if site.facebook_url %}
-          <a href="{{ site.facebook_url }}">
+          <a href="{{ site.facebook_url }}" target="_blank">
             <svg viewBox="0 0 448 512" width="24" height="24" class="icon">
               <use xlink:href="#facebook"></use>
             </svg>
@@ -100,5 +105,9 @@
     {{ content }}
   </main>
   <p class="fine-print">&copy; {% if site.established_year %}{{ site.established_year }}&ndash;{% endif %}{{ site.time | date: '%Y' }} {{ site.title }}, All Rights Reserved.</p>
+  <div class="confetti--wrapper">
+    <div class="confetti confetti--bl"></div>
+    <div class="confetti confetti--br"></div>
+  </div>
 </body>
 </html>
