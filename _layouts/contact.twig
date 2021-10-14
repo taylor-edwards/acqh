@@ -2,10 +2,62 @@
 layout: default
 ---
 
-<h1 class="title text--main">{{ site.title }}</h1>
+<div class="contact">
+  <section class="section">
+    <h1 class="title text--main contact--title">
+      {% if page.intro %}
+        {{ page.intro }}
+      {% else %}
+        {{ site.title }}
+      {% endif %}
+    </h1>
 
-{{ content }}
+    <div class="contact--content">
+      {% if page.hours %}
+        <div class="contact--block">
+          <h3 class="callout uppercase text--alt contact--callout">Hours:</h3>
+          <table class="contact--hours info">
+            {% for range in page.hours %}
+              <tr>
+                <td>{{ range.day }}</td>
+                <td>{{ range.times }}</td>
+              </tr>
+            {% endfor %}
+          </table>
+        </div>
+      {% endif %}
 
-{% if page.hero_image_name %}
-  <img src="{{ site.baseurl }}/assets/{{ page.hero_image_name }}">
-{% endif %}
+      {% if page.phone or site.phone %}
+        <div class="contact--block">
+          <h3 class="callout uppercase text--alt contact--callout">Phone:</h3>
+          <ul class="info">
+            {% if page.phone %}
+              <li><a href="tel:{{ page.phone }}">{{ page.phone }}</a></li>
+            {% endif %}
+            {% if site.phone %}
+              <li><a href="tel:{{ site.phone }}">{{ site.phone }}</a></li>
+            {% endif %}
+          </ul>
+        </div>
+      {% endif %}
+
+      {% if page.email or site.email %}
+        <div class="contact--block">
+          <h2 class="callout uppercase text--alt contact--callout">E-mail:</h2>
+          <ul class="info">
+            {% if page.email %}
+              <li><a href="mailto:{{ page.email }}">{{ page.email }}</a></li>
+            {% endif %}
+            {% if site.email %}
+              <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+            {% endif %}
+          </ul>
+        </div>
+      {% endif %}
+    </div>
+  </section>
+
+  {% if page.hero_image_name %}
+    <img src="{{ site.baseurl }}/assets/{{ page.hero_image_name }}" class="hero-image">
+  {% endif %}
+</div>

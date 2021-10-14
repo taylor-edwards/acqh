@@ -43,6 +43,20 @@ a:focus {
   color: var(--color-alt);
 }
 
+.btn {
+  background: var(--foreground);
+  border-radius: 8px;
+  color: var(--background);
+  display: inline-block;
+  margin: 20px 0;
+  padding: 6px 24px 8px;
+}
+
+.btn:hover,
+.btn:focus {
+  color: var(--background);
+}
+
 .text--main {
   color: var(--color-main);
 }
@@ -66,7 +80,7 @@ a:focus {
 
 .title {
   font-family: var(--font-serif);
-  font-size: 38px;
+  font-size: 36px;
   font-weight: 500;
   line-height: 44px;
 }
@@ -101,7 +115,7 @@ body,
 }
 
 .body > p + p {
-  margin-top: 27px;
+  margin-top: 20px;
 }
 
 .small-caps {
@@ -111,6 +125,13 @@ body,
   letter-spacing: 0.02em;
   line-height: 27px;
   text-transform: uppercase;
+}
+
+.info {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
 }
 
 .quote {
@@ -137,7 +158,6 @@ body {
   padding: 0 20px;
 }
 
-div,
 img,
 svg {
   object-fit: contain;
@@ -146,7 +166,6 @@ svg {
 
 .icon {
   vertical-align: middle;
-  width: 1.15em;
 }
 
 .nav {
@@ -182,6 +201,7 @@ svg {
 .logo,
 .logo-mark {
   --foreground: var(--color-main);
+  flex-shrink: 0;
   overflow: visible;
   position: relative;
 }
@@ -247,7 +267,7 @@ svg {
   margin-bottom: 80px;
 }
 
-.section--content {
+.home--content {
   margin-bottom: 32px;
 }
 
@@ -262,6 +282,7 @@ svg {
   display: grid;
   gap: 30px;
   justify-content: center;
+  max-width: 1220px;
 }
 
 .person {
@@ -283,6 +304,8 @@ svg {
 .affiliates {
   display: grid;
   gap: 42px;
+  grid-template-columns: 1fr;
+  max-width: 1000px;
 }
 
 .affiliate--link {
@@ -316,7 +339,64 @@ svg {
 
 /* Contact page */
 
+.contact {
+  display: block;
+  text-align: center;
+}
+
+.contact--callout {
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 6px;
+}
+
+.contact > .section {
+  display: inline-block;
+  text-align: left;
+}
+
+.contact--title {
+  margin-bottom: 40px;
+}
+
+.contact--content {
+  margin: 40px 0 60px;
+}
+
+.contact--hours {
+  border: 0;
+  border-collapse: collapse;
+  padding: 0;
+}
+
+.contact--hours td:first-of-type {
+  padding-right: 20px;
+}
+
+.contact--block + .contact--block {
+  margin-top: 38px;
+}
+
 /* Horses page */
+
+.horse-listings {
+  display: grid;
+  gap: 32px;
+  justify-content: center;
+}
+
+.listing {
+  max-width: 544px;
+}
+
+.listing--info {
+  margin: 4px 0 12px !important;
+  min-height: 48px;
+}
+
+.listing--image {
+  margin-bottom: 8px;
+}
 
 .horse-listings > .listing:nth-child(even) {
   --foreground: var(--color-main);
@@ -327,6 +407,10 @@ svg {
 }
 
 @media (min-width: 380px) {
+  .info {
+    font-size: 20px;
+    line-height: 24px;
+  }
   .nav > .logo-mark p {
     display: block;
   }
@@ -352,15 +436,20 @@ svg {
     flex-direction: row;
     gap: 20px;
   }
+  .home--content {
+    padding-left: 116px;
+  }
 }
 
 @media (min-width: 768px) {
   body {
     padding: 0 40px;
   }
-  .callout {
+  .info,
+  .callout,
+  .contact--callout {
     font-size: 30px;
-    line-height: 34px;
+    line-height: 38px;
   }
   .logo-mark svg {
     margin-left: 0;
@@ -372,6 +461,9 @@ svg {
   .portrait {
     width: 256px;
   }
+  .affiliates {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -379,10 +471,22 @@ svg {
     padding: 0 60px;
   }
   .content {
-    padding: 100px 0 120px;
+    padding: 70px 0 90px;
   }
-  .section--content {
+  .contact {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1100px;
+  }
+  .contact--title {
+    margin-bottom: 64px;
+  }
+  .home--content {
     margin-right: 32px;
+    padding-left: 0;
   }
   .section--hero {
     align-items: flex-start;
@@ -390,32 +494,19 @@ svg {
   }
   .title {
     font-size: 60px;
-    line-height: 64px;
+    line-height: 66px;
   }
   .hero-image {
     margin: 0;
-    max-width: 300px;
+    max-width: 400px;
   }
-  .affiliates {
-    grid-template-columns: repeat(auto-fill, 450px);
+  .horse-listings {
+    grid-template-columns: repeat(auto-fill, 544px);
   }
 }
 
 @media (min-width: 1400px) {
-  .hero-image {
-    max-width: unset;
-  }
-  .folks {
-    gap: 60px;
-    justify-content: flex-start;
-  }
-  .affiliates {
-    grid-template-columns: repeat(auto-fill, 600px);
-  }
-}
-
-@media (min-width: 1600px) {
-  .content {
+  .home--wrapper {
     padding-left: 160px;
   }
   .heading {
@@ -424,5 +515,11 @@ svg {
   }
   .heading--icon {
     width: 128px;
+  }
+  .hero-image {
+    max-width: 512px;
+  }
+  .folks {
+    justify-content: flex-start;
   }
 }

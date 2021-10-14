@@ -7,10 +7,11 @@ keywords:
 available_horses:
   - name: AC GIDGET SMOKNMIROR
     nickname: Kinicki
+    image_name: horses_kinicki.jpg
     price: $3,000
-    description: Liver chestnut stud colt
-    birthday: May 27, 2020
-    notes: AQHA, Ruby Buckle Incentive, DNA Parentage Verified, 5-Panel N/N
+    description: Liver&nbsp;chestnut stud&nbsp;colt
+    birthday: May&nbsp;27,&nbsp;2020
+    notes: AQHA, Ruby Buckle Incentive, DNA Parentage Verified, 5-Panel&nbsp;N/N
     sires:
       - Dash For Perks
       - Frenchman Sparks
@@ -35,6 +36,7 @@ available_horses:
       friendly and loves attention.
   - name: AC FANCY SPEED DEMON
     nickname: Rizzo
+    image_name: horses_rizzo.jpg
     price: $9,500
     description: Bay roan filly
     birthday: May 9, 2020
@@ -53,5 +55,4 @@ available_horses:
       Foundation bloodlines, that can take you in any direction. Bred for a job
       on the ranch or in the arena, or just a trip down a trail. Loves attention
       and is in your pocket looking for cookies.
-
 ---

@@ -2,71 +2,73 @@
 layout: default
 ---
 
-<section class="section section--hero">
-  <div>
-    <div class="heading">
-      <img src="{{ site.baseurl }}/assets/icons_horseshoe.png" class="heading--icon">
-      <h1 class="title text--main">{{ page.intro }}</h1>
+<div class="home--wrapper">
+  <section class="section section--hero">
+    <div>
+      <div class="heading">
+        <img src="{{ site.baseurl }}/assets/icons_horseshoe.png" class="heading--icon">
+        <h1 class="title text--main">{{ page.intro }}</h1>
+      </div>
+      <div class="home--content body">{{ content }}</div>
     </div>
-    <div class="section--content body">{{ content }}</div>
-  </div>
 
-  {% if page.hero_image_name %}
-    <img class="hero-image" src="{{ site.baseurl }}/assets/{{ page.hero_image_name }}">
-  {% endif %}
-</section>
+    {% if page.hero_image_name %}
+      <img class="hero-image" src="{{ site.baseurl }}/assets/{{ page.hero_image_name }}">
+    {% endif %}
+  </section>
 
-<section class="section">
-  <div class="heading">
-    <img src="{{ site.baseurl }}/assets/icons_succulent.png" class="heading--icon">
-    <h2 class="title text--main">{{ page.subtitle }}</h2>
-  </div>
+  <section class="section">
+    <div class="heading">
+      <img src="{{ site.baseurl }}/assets/icons_succulent.png" class="heading--icon">
+      <h2 class="title text--main">{{ page.subtitle }}</h2>
+    </div>
 
-  <ul class="folks">
-    {% for person in page.people %}
-      <li class="person">
-        {% if person.image_name %}
-          <img src="{{ site.baseurl }}/assets/{{ person.image_name }}" class="portrait">
-        {% endif %}
-        <p class="callout text--accent">{{ person.name }}</p>
-        {% if person.role %}
-          <p class="body">{{ person.role }}</p>
-        {% endif %}
-      </li>
-    {% endfor %}
-  </ul>
-</section>
-
-<section class="section">
-  <div class="heading">
-    <img src="{{ site.baseurl }}/assets/icons_cacti.png" class="heading--icon">
-    <h2 class="title text--main">{{ page.affiliates_title }}</h2>
-  </div>
-
-  <ul class="affiliates">
-    {% for affiliate in page.affiliates %}
-      <li class="affiliate">
-        <div class="logo">
-          <div class="logo--ornament"></div>
-          <svg width="100px" height="100px" viewBox="0 0 300 300" class="logo">
-            <use xlink:href="#logo"></use>
-          </svg>
-        </div>
-        <div>
-          <p class="subtitle uppercase">{{ affiliate.name }}</p>
-          {% if affiliate.byline %}
-            <p class="body">
-              {% if affiliate.byline_url %}
-                <a href="{{ affiliate.byline_url }}" target="_blank" class="affiliate--link">
-                  {{ affiliate.byline }}
-                </a>
-              {% else %}
-                {{ affiliate.byline }}
-              {% endif %}
-            </p>
+    <ul class="folks">
+      {% for person in page.people %}
+        <li class="person">
+          {% if person.image_name %}
+            <img src="{{ site.baseurl }}/assets/{{ person.image_name }}" class="portrait">
           {% endif %}
-        </div>
-      </li>
-    {% endfor %}
-  </ul>
-</section>
+          <p class="callout text--accent">{{ person.name }}</p>
+          {% if person.role %}
+            <p class="body">{{ person.role }}</p>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section class="section">
+    <div class="heading">
+      <img src="{{ site.baseurl }}/assets/icons_cacti.png" class="heading--icon">
+      <h2 class="title text--main">{{ page.affiliates_title }}</h2>
+    </div>
+
+    <ul class="affiliates">
+      {% for affiliate in page.affiliates %}
+        <li class="affiliate">
+          <div class="logo">
+            <div class="logo--ornament"></div>
+            <svg viewBox="0 0 300 300" width="100" height="100" class="logo">
+              <use xlink:href="#logo"></use>
+            </svg>
+          </div>
+          <div>
+            <p class="subtitle uppercase">{{ affiliate.name }}</p>
+            {% if affiliate.byline %}
+              <p class="body">
+                {% if affiliate.byline_url %}
+                  <a href="{{ affiliate.byline_url }}" target="_blank" class="affiliate--link">
+                    {{ affiliate.byline }}
+                  </a>
+                {% else %}
+                  {{ affiliate.byline }}
+                {% endif %}
+              </p>
+            {% endif %}
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+</div>

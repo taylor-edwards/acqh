@@ -1,32 +1,18 @@
 ---
 layout: contact
 title: Contact
+intro: Arizona Cactus<br />Quarter Horses
 hero_image_name: hero_red.png
 keywords:
   - hours
   - contact
   - phone
   - email
+hours:
+  - day: Monday &ndash; Saturday
+    times: 9&nbsp;AM &ndash; 6&nbsp;PM
+  - day: Sunday
+    times: CLOSED
+  - day: Holidays
+    times: CLOSED
 ---
-
-Hours:
-
-Monday &ndash; Saturday
-
-9 A.M. &ndash; 6 P.M.
-
-Sunday
-
-CLOSED
-
-Holidays
-
-CLOSED
-
-Phone:
-
-(123) 456-7890
-
-E-mail:
-
-arizonacactusqrtrhorses@gmail.com
