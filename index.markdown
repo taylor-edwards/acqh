@@ -42,7 +42,7 @@ affiliates:
   - name: Aaron Ranch
     byline: aaronranch.com
     byline_url: https://aaronranch.com
-  - name: Reynolds Performance Horses
+  - name: Reynolds' Performance Horses
     byline: Visit on Facebook
     byline_url: https://business.facebook.com/Reynolds-Performance-Horses-533572230471640/
   - name: Lady Longears Ranch and&nbsp;Arena
@@ -64,8 +64,8 @@ going strong. We acquired some mares and went from there, building our small
 ranch on quality foundation quarter horses with some bloodlines
 originating in Wyoming.
 
-Our goal is to fulfill a lifelong dream &ndash; to produce quality ranch and roping
-horses with out crosses in the lines of performance, such as barrel racing.
+Our goal is to fulfill a lifelong dream &ndash; to produce quality ranch and
+roping horses with crossed in lines for performance, such as barrel racing.
 Our focus is with the mares and choosing the right stallions that will enhance
 attributes and genes from both Sire and Dame
 

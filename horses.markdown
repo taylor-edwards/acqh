@@ -29,8 +29,8 @@ available_horses:
       - Leo Hancock Hayes
       - Mcits Red Agate
     bio: >-
-      This colts sire is 16hh and dame is 15.2hh. Bred to run performance i.e.
-      barrels, heading. Has been paid into Ruby Buckle incentive for his first
+      This colt's sire is 16hh and dame is 15.2hh. Bred to run performance, i.e.
+      barrels and heading. Has been paid into Ruby Buckle incentive for his first
       year. Should make an awesome performance horse with running on top and
       foundation on the bottom. This guy is curious, meet-you-at-the-gate
       friendly and loves attention.
