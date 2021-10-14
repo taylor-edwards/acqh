@@ -244,6 +244,14 @@ svg {
   position: relative;
 }
 
+a.logo:hover,
+a.logo:focus,
+a.logo-mark:hover,
+a.logo-mark:focus {
+  color: inherit;
+  cursor: default;
+}
+
 .logo-mark {
   display: flex;
 }
@@ -511,7 +519,7 @@ svg {
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .nav--home {
     display: block;
   }
