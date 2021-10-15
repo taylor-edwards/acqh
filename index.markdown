@@ -11,11 +11,14 @@ people:
     role: Farm Hand
     image_name: portraits_absentee.png
   - name: Danielle
-    role: Farm Hand
+    role: ACQH Alumni
     image_name: portraits_danielle.png
   - name: Dallas Tornow
     role: ACQH Alumni
     image_name: portraits_dallas.png
+  - name: Levi
+    role: Farm Hand
+    image_name: portraits_absentee.png
   - name: Peyton Rose
     role: ACQH Alumni
     image_name: portraits_peyton.png
@@ -28,6 +31,9 @@ people:
   - name: Sara Austin
     role: ACQH Alumni
     image_name: portraits_sara.png
+  - name: Vannah
+    role: Farm Hand
+    image_name: portraits_absentee.png
 affiliates_title: Friends of ACQH
 affiliates:
   - name: WMW Quarter Horses
@@ -52,7 +58,7 @@ affiliates:
     byline: Visit on Facebook
     byline_url: https://www.facebook.com/ashleymassengillbartelds/
   - name: Wildrose Performance Horses
-    byline: Dallas Tornow &ndash; Deer&nbsp;Park,&nbsp;WA
+    byline: Peyton Rose &ndash; Deer&nbsp;Park,&nbsp;WA
     byline_url:
 ---
 
