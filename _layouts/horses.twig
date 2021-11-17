@@ -4,9 +4,9 @@ layout: default
 
 <ul class="horse-listings">
   {% for horse in page.available_horses %}
-    <li class="listing body">
+    <li class="listing">
       <p class="callout text--accent">
-        {{ horse.name }}{% if horse.price %} &middot; {{ horse.price }}{% endif %}
+        {{ horse.name }}{% if horse.price %}{% endif %}
       </p>
       <p class="listing--info subtitle">
         {% if horse.nickname %}
@@ -19,6 +19,11 @@ layout: default
           b.&nbsp;{{ horse.birthday }}
         {% endif %}
       </p>
+      {% if horse.price %}
+        <p class="listing--row subtitle text--accent">
+          {{ horse.price }}
+        </p>
+      {% endif %}
 
       {% if horse.image_name %}
         <img src="{{ site.baseurl }}/assets/{{ horse.image_name }}" class="listing--image">

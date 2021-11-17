@@ -480,8 +480,12 @@ a.logo-mark:focus {
   max-width: 544px;
 }
 
-.listing--info {
+.listing--info,
+.listing--row {
   margin: 4px 0 12px !important;
+}
+
+.listing--info {
   min-height: 48px;
 }
 

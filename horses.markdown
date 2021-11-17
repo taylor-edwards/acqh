@@ -8,7 +8,7 @@ available_horses:
   - name: AC GIDGET SMOKNMIROR
     nickname: Kinicki
     image_name: horses_kinicki.jpg
-    price: $6,000
+    price: SALE&nbsp;PENDING
     description: Liver&nbsp;chestnut stud&nbsp;colt
     birthday: May&nbsp;27,&nbsp;2020
     notes: AQHA, Ruby Buckle Incentive, DNA Parentage Verified, 5-Panel&nbsp;N/N

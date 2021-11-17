@@ -9,10 +9,11 @@ keywords:
   - phone
   - email
 hours:
-  - day: Monday &ndash; Saturday
+  - day: Tuesday &ndash; Saturday
     times: 9&nbsp;AM &ndash; 6&nbsp;PM
-  - day: Sunday
+  - day: Sunday &ndash; Monday
     times: CLOSED
   - day: Holidays
     times: CLOSED
+phone: (509) 995-6185
 ---
