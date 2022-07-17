@@ -8,20 +8,23 @@ available_horses:
   - name: AC GIDGET SMOKNMIROR
     nickname: Kinicki
     image_name: horses_kinicki.jpg
-    price: $6,000
+    price: $3,500
     description: Liver&nbsp;chestnut stud&nbsp;colt
     birthday: May&nbsp;27,&nbsp;2020
     notes: AQHA, Ruby Buckle Incentive, DNA Parentage Verified, 5-Panel&nbsp;N/N
     sires:
       - Frenchman Sparks
     dames:
-      - Gidget
+      - Falcons Mcred Gidget
     bio: >-
-      This colt's sire is 16hh and dame is 15.2hh. Bred to run performance, i.e.
-      barrels and heading. Has been paid into Ruby Buckle incentive for his first
-      year. Should make an awesome performance horse with running on top and
-      foundation on the bottom. This guy is curious, meet-you-at-the-gate
-      friendly and loves attention.
+      This colt's sire is 16hh and dame is
+      15.2hh. Bred for the best of both worlds &ndash; foundation and run. He
+      has been paid into Ruby Buckle since he was a foal and is now two years
+      old and ready to start. Kinicki was partially gelded and is considered
+      a cryptorchid. Through no fault of his own we have reduced his price to
+      reflect the costs of the surgery to remove his other testicle. He is a
+      wonderful horse and would make an outstanding barrel or heading
+      prospect. Kinicki is friendly, curious and loves attention.
   - name: AC FANCY SPEED DEMON
     nickname: Rizzo
     image_name: horses_rizzo.jpg
