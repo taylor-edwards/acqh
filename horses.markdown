@@ -8,7 +8,7 @@ available_horses:
   - name: AC GIDGET SMOKNMIROR
     nickname: Kinicki
     image_name: horses_kinicki.jpg
-    price: $3,500
+    price: SOLD!
     description: Liver&nbsp;chestnut stud&nbsp;colt
     birthday: May&nbsp;27,&nbsp;2020
     notes: AQHA, Ruby Buckle Incentive, DNA Parentage Verified, 5-Panel&nbsp;N/N
@@ -28,7 +28,7 @@ available_horses:
   - name: AC FANCY SPEED DEMON
     nickname: Rizzo
     image_name: horses_rizzo.jpg
-    price: $4,500
+    price: SOLD!
     description: Bay roan filly
     birthday: May 9, 2020
     notes: AQHA, NFQHA Registered
