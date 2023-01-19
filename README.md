@@ -1,15 +1,13 @@
 # Arizona Cactus Quarter Horses
 
-ACQH is powered by Jekyll. First time users should install it alongside `bundler`:
+The official website for Arizona Cactus Quarter Horses, a Pacific Northwest horse breeder.
+
+## Getting Started
+
+ACQH is a Github Pages site. You'll need Ruby the gems `bundler` and `jekyll` to run the site locally:
 
 ```sh
 gem install bundler jekyll
-```
-
-With Jekyll available, install local depencies with Bundler:
-
-```sh
-cd path/to/acqh
 bundle install
 ```
 
